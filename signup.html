@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLBB Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bdd888b-fe5c-4358-8c46-5362c7ce3154/dehn7hz-56d75669-c27f-4d2b-8e30-91dc2c542e4c.jpg/v1/fill/w_1280,h_720,q_75,strp/cool_gaming_background_4k_by_skullbreaker000_dehn7hz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNGJkZDg4OGItZmU1Yy00MzU4LThjNDYtNTM2MmM3Y2UzMTU0XC9kZWhuN2h6LTU2ZDc1NjY5LWMyN2YtNGQyYi04ZTMwLTkxZGMyYzU0MmU0Yy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.oV9fk5Nb0ps6-6_Omk6AfhkNvdqDyQRvV_hLyys1S6Q');
+      background-size: cover;
+      background-position: center;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 2rem;
+      border-radius: 15px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 0 15px #f1c40f;
+    }
+
+    .form-container h2 {
+      color: #f1c40f;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #f1c40f;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form-container button:hover {
+      background-color: #d4ac0d;
+    }
+
+    .form-container .links {
+      margin-top: 1rem;
+    }
+
+    .form-container .links a {
+      color: #f1c40f;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: bold;
+    }
+
+    .form-container .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>MLBB Sign Up</h2>
+    <form method="POST" action="/signup">
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="links">
+      <a href="/login">Already have an account?</a>
+      <a href="/">Back to Store</a>
+    </div>
+  </div>
+</body>
+</html>

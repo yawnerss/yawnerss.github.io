@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>olosa photogalerry | Home</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bdd888b-fe5c-4358-8c46-5362c7ce3154/dehn7hz-56d75669-c27f-4d2b-8e30-91dc2c542e4c.jpg/v1/fill/w_1280,h_720,q_75,strp/cool_gaming_background_4k_by_skullbreaker000_dehn7hz-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNGJkZDg4OGItZmU1Yy00MzU4LThjNDYtNTM2MmM3Y2UzMTU0XC9kZWhuN2h6LTU2ZDc1NjY5LWMyN2YtNGQyYi04ZTMwLTkxZGMyYzU0MmU0Yy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.oV9fk5Nb0ps6-6_Omk6AfhkNvdqDyQRvV_hLyys1S6Q") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      color: gold;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #005bea, #00c6fb);
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #00c6fb, #005bea);
+    }
+
+    .logo {
+      width: 200px;
+      margin-bottom: 1.5rem;
+      filter: drop-shadow(0 0 5px gold);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZd88OtD-EHU8_1MHKxaazcsddh5XsjV10A&s" alt="MLBB Logo" class="logo">
+    <h1>WELCOME TO GALERRY OF OLOSA</h1>
+    <p>OUR LADY OS SNOWS ACADEMY</p>
+    <div class="btn-container">
+      <a href="/login" class="btn">Login</a>
+      <a href="/signup" class="btn">Sign Up</a>
+      <a href="/store" class="btn">ENTER TO THE GALERRY</a>
+    </div>
+  </div>
+</body>
+</html>

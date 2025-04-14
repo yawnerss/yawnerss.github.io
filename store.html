@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MLBB cardo Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4bdd888b-fe5c-4358-8c46-5362c7ce3154/dehn7hz-56d75669-c27f-4d2b-8e30-91dc2c542e4c.jpg/v1/fill/w_1192,h_670,q_70,strp/cool_gaming_background_4k_by_skullbreaker000_dehn7hz-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNGJkZDg4OGItZmU1Yy00MzU4LThjNDYtNTM2MmM3Y2UzMTU0XC9kZWhuN2h6LTU2ZDc1NjY5LWMyN2YtNGQyYi04ZTMwLTkxZGMyYzU0MmU0Yy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.oV9fk5Nb0ps6-6_Omk6AfhkNvdqDyQRvV_hLyys1S6Q") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: gold;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      background-color: #003399;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #0055ff;
+    }
+
+    .heroes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid gold;
+      border-radius: 12px;
+      width: 200px;
+      padding: 1rem;
+      text-align: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn-buy {
+      margin-top: 0.5rem;
+      background-color: #00aaff;
+      border: none;
+      padding: 0.5rem 1rem;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .btn-buy:hover {
+      background-color: #0088cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>OLOSA PHOTOGALERRY</h1>
+
+    <div class="navbar">
+      <a href="#">activity</a>
+      <a href="#">program</a>
+      <a href="#">academics</a>
+      <a href="#">Support</a>
+      <a href="#">sponsors</a>
+      <a href="/logout">Logout</a>
+    </div>
+
+    <div class="heroes">
+      <div class="card">
+        <img src="https://media-hosting.imagekit.io/6bb3eb1c3e194824/david.jpg?Expires=1839239766&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=hp536dLCs4noxYhgdhnAWzHWL-szsa~zJ08C~aRwMsoLI6TszT0auLHllO2qVKu59-xLm0~5Ui9WvzQZiYeScXtO~B40GrhEU5C3MNMe26SrG9TjtdyDVgaKiLbRzNDrl5Gh9cu0a0BnRv0p60edd0fU9OMw4jaDUt9rOd0-7-eVP~HnPLZl-zxjzcOaJJ559INcNv58xConBqgvzsYJFx~z4hjh7L3~JSJHJee5HQmeyrcL2UorpAF883P0VmMJAlSLMJVw6B3ImdUiq~20unKHDELukmed~hU-LvNp2yRt6RdOVnjEnmuc4HkfE2UGrBQCj3BTqd2T1P36cqyl5Q__" alt="Hero 1">
+        <h3>DAVID BALBEDINA</h3>
+        <button class="btn-buy">fb:DAVID BALBEDINA</button>
+      </div>
+      <div class="card">
+        <img src="https://media-hosting.imagekit.io/3a0812f7d8f04eb8/bogs.jpg?Expires=1839239818&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=rP~WHnTgUszQZdOmhyz4f36c1KJh0zMyFqV7jFEVnTf3~8l7gG2-z-58XdsPWqP3Dx-nnHdYep2IV1wkftIO6CZkr78EfBXOCKIWYx77v5rsz4zXNMYVog0v05slXnsLm3M3JIYQXDvBm7EoOXq9nJcPhN9T3NR61UbbH-Pa-GkWbqVQFj7L-eKMRd1EHxtMrLbBrN2Qi7Y-zyqJjqqtLf6pYFKK9xu4hjOw8jbG~wx8WAfhRDezwFOUSnJs1hSrR2AY1V~J9v4jhIo3fMQxg7N0DjkCQUfvdr2BaAgJpeF5IpVr5r4y7CmwlafXFIslG6UFyAPWLXHfvuC~lUXwPQ__" alt="Hero 2">
+        <h3>john bogs</h3>
+        <button class="btn-buy">fb:john k pam</button>
+      </div>
+      <div class="card">
+        <img src="https://media-hosting.imagekit.io/b6a0a0b76f82454a/jay-ar.jpg?Expires=1839239854&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Qjt7NlY8iO-C8LqvV-eD8f4U7VT2WoJcrrGnFdDg7cbg6QW5o8kBulcZrNxsOvM4dB3mPPeClIWfR5Hv7HdNnGYLwj3d-pDYL8TQfu~qC5eBRjJIX47N94CucZh3EnrfSYbHlFUDFg3Rj4emsJBLcfGNVfOH0FYUJRfPtYOxdhRh2DNu6Qr~Ix1tu6gGrbST9nf2KxVaePzF5LwA9SGGzrMCJYegMfgmgs3de-bXME0ulrq0~Xeic7vbr5aaEroxoJcizs0AGlwP8Jq3woZrt1LvClxoBiw-LwlMrQnw1~l~n3~-qUC4q0wXwk-lqzFwU4EwEQ5L5MN8eLuaKFqA6g__" alt="Hero 3">
+        <h3>jay-ar</h3>
+        <button class="btn-buy">fb:jay-ar dayag</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
